@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>PC</title>
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader__inner">
+      <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="preloader__circle" cx="50" cy="50" r="35"/>
+        <defs>
+          <linearGradient id="paint0_linear_10091_100" x1="39.8907" y1="-10.2543" x2="86.1505" y2="54.5852" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#DF5950"/>
+          <stop offset="1" stop-color="#451046"/>
+          </linearGradient>
+        </defs>
+       </svg>
+    </div>
+  </div>
+  <div class="page__transition"></div>
+  @@include("_header.html")
+  <main class="page">
+    <section class="page__intro intro-page">
+      <div class="intro-page__inner">
+        <div class="intro-page__container container">
+          <div class="intro-page__content">
+            <h1 class="intro-page__title typed">Первый курс<br>по компьютерной сборке</h1>
+          </div>
+          <div class="intro-page__timer timer-page">
+            <div class="timer-page__col">
+              <div class="timer-page__item">
+                <div class="timer-page__time day">00</div>
+                <div class="timer-page__label">дней</div>
+              </div>
+            </div>  
+            <div class="timer-page__col">
+              <div class="timer-page__item">
+                <div class="timer-page__time hour">00</div>
+                <div class="timer-page__label">часов</div>
+              </div>
+            </div> 
+            <div class="timer-page__col">
+              <div class="timer-page__item">
+                <div class="timer-page__time min">00</div>
+                <div class="timer-page__label">минут</div>
+              </div>
+            </div> 
+            <div class="timer-page__col">
+              <div class="timer-page__item">
+                <div class="timer-page__time sec">00</div>
+                <div class="timer-page__label">секунд</div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+      <div class="intro-page__stat stat-intro">
+        <div class="stat-intro__container container">
+          <div class="stat-intro__inner">
+            <a href="" class="stat-intro__btn btn btn-glare glare">Заказать курс</a>
+            <div class="stat-intro__info info-stat">
+              <div class="info-stat__item">
+                <div class="info-stat__label">Учеников всего:</div>
+                <div class="info-stat__value">200</div>
+              </div>
+              <div class="info-stat__item">
+                <div class="info-stat__label">Успешно закончили курс:</div>
+                <div class="info-stat__value">190</div>
+              </div>
+            </div>
+            <div class="stat-intro__progress progress-stat">
+              <div class="progress-stat__info"> 
+                <span class="progress-stat__label">Заработано учениками:</span>
+                <span class="progress-stat__value">400 000₽</span>
+              </div>
+              <div class="progress-stat__progress">
+                <div class="progress-stat__width progress"></div>
+                <div class="progress-stat__thumb">0</div>
+                <div class="progress-stat__thumb">1 000 000₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page__about about-page section">
+      <div class="about-page__container container">
+        <div class="about-page__inner">
+          <div class="about-page__preview">
+            <div class="about-page__image">
+              <img class="animate" data-animation="leftmove" src="img/dekstop.png" alt="dekstop">
+            </div>
+          </div>
+          <div class="about-page__content">
+            <h2 class="about-page__title section-title">
+              <span class="section-title__space">
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 0">Ч</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 1">е</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 2">м</span>
+              </span>
+              <span class="section-title__space">
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 3">м</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 4">ы</span>
+              </span>
+              <span class="section-title__space">
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 5">з</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 6">а</span> 
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 7">н</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 8">и</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 9">м</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 10">а</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">е</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 12">м</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 13">с</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 14">я</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 15">?</span>
+              </span>
+            </h2>
+            <div class="about-page__text animate" data-animation="translateY">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page__stat stat-page section">
+      <div class="stat-page__container container">
+        <div class="stat-page__inner">
+          <div class="stat-page__header"> 
+            <div class="stat-page__logo section-logo animate vector" data-animation="dash">
+              <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="section-circle" stroke="url(#paint0_linear_10091_100)" stroke-width="30" fill-rule="evenodd" clip-rule="evenodd" mask="url(#msk)" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z" />
+                <defs>
+                  <linearGradient id="paint0_linear_10091_100" x1="39.8907" y1="-10.2543" x2="86.1505" y2="54.5852" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#DF5950"/>
+                  <stop offset="1" stop-color="#451046"/>
+                  </linearGradient>
+                  <mask id="msk">
+                  <rect width="100%" height="100%" fill="black"/>
+                  <path  fill="white"  stroke="white" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z"/>
+                  </mask> 
+                </defs>
+              </svg>               
+            </div>
+            <h2 class="stat-page__title section-title">
+              <span class="section-title__space">
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 0">Б</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 1">ы</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 2">с</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 3">т</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 4">р</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 5">ы</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 6">й</span> 
+              </span>
+              <span class="section-title__space">
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 7">с</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 8">т</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 9">а</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 10">р</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">т</span>
+              </span>
+            </h2>
+          </div>
+          <div class="stat-page__label animate" data-animation="translateY">Больше 90% учеников прошли полный курс и смогли<br>собрать свой первый компьютер</div>
+          <div class="stat-page__cols">
+            <div class="stat-page__col col-stat animate" data-animation="translateY">
+              <div class="col-stat__label">100%</div>
+              <div class="col-stat__block animate" data-animation="blockWidth" style="--col: 80px"></div>
+              <div class="col-stat__text ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+              </div>
+            </div>
+            <div class="stat-page__col col-stat animate" data-animation="translateY">
+              <div class="col-stat__label">75%</div>
+              <div class="col-stat__block animate" data-animation="blockWidth" style="--col: 60px"></div>
+              <div class="col-stat__text ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+              </div>
+            </div>
+            <div class="stat-page__col col-stat animate" data-animation="translateY">
+              <div class="col-stat__label">50%</div>
+              <div class="col-stat__block animate" data-animation="blockWidth" style="--col: 30px"></div>
+              <div class="col-stat__text ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+              </div>
+            </div>
+            <div class="stat-page__col col-stat animate" data-animation="translateY">
+              <div class="col-stat__label">Итог</div>
+              <div class="col-stat__block animate" data-animation="blockWidth" style="--col: 10px"></div>
+              <div class="col-stat__text ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page__benefits benefits-page section">
+      <div class="benefits-page__container container">
+        <h2 class="benefits-page__title section-title">
+          <span class="section-title__space">
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 0">П</span>
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 1">о</span>
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 2">л</span>
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 3">у</span>
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 4">ч</span>
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 5">и</span>
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 6">т</span> 
+            <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 7">е</span>
+          </span>
+          <span class="section-title__space">
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 8">п</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 9">р</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 10">о</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">ф</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 12">е</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 13">с</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 14">с</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 15">и</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 16">ю</span>
+          </span>
+          <span class="section-title__space">
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 17">п</span> 
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 18">р</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 19">я</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 20">м</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 21">о</span>
+          </span>
+          <span class="section-title__space">
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 22">с</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 23">е</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 24">й</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 25">ч</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 26">а</span>
+            <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 27">с</span>
+          </span>
+        </h2>
+        <div class="benefits-page__cols">
+          <div class="benefits-page__col col-benefits">
+            <div class="col-benefits__preview">
+              <img src="img/icons/icon-1.svg" alt="icon-1">
+            </div>
+            <h2 class="col-benefits__title  animate" data-animation="textanimate">Только практические навыки&nbsp;в&nbsp;работе</h2>
+            <div class="col-benefits__text  animate" data-animation="textanimate">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+          </div>
+          <div class="benefits-page__col col-benefits">
+            <div class="col-benefits__preview">
+              <img src="img/icons/icon-2.svg" alt="icon-2">
+            </div>
+            <h2 class="col-benefits__title  animate" data-animation="textanimate">Только практические навыки&nbsp;в&nbsp;работе</h2>
+            <div class="col-benefits__text  animate" data-animation="textanimate">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+          </div>
+          <div class="benefits-page__col col-benefits">
+            <div class="col-benefits__preview">
+              <img src="img/icons/icon-3.svg" alt="icon-3">
+            </div>
+            <h2 class="col-benefits__title  animate" data-animation="textanimate">Только практические навыки&nbsp;в&nbsp;работе</h2>
+            <div class="col-benefits__text  animate" data-animation="textanimate">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page__partners partners-page section">
+      <div class="partners-page__container container">
+        <div class="partners-page__header">
+          <div class="partners-page__logo section-logo animate vector" data-animation="dash">
+            <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="section-circle" stroke="url(#paint0_linear_10091_100)" stroke-width="30" fill-rule="evenodd" clip-rule="evenodd" mask="url(#msk)" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z" />
+              <defs>
+                <linearGradient id="paint0_linear_10091_100" x1="39.8907" y1="-10.2543" x2="86.1505" y2="54.5852" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DF5950"/>
+                <stop offset="1" stop-color="#451046"/>
+                </linearGradient>
+                <mask id="msk">
+                <rect width="100%" height="100%" fill="black"/>
+                <path  fill="white"  stroke="white" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z"/>
+                </mask> 
+              </defs>
+            </svg>  
+          </div>
+          <h2 class="partners-page__title section-title">
+            <span class="section-title__space">
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 0">П</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 1">а</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 2">р</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 3">т</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 4">н</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 5">е</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 6">р</span> 
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 7">ы</span>
+            </span>
+            <span class="section-title__space">
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 8">-</span>
+            </span>
+            <span class="section-title__space"> 
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 9">т</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 10">о</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">п</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 12">о</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 13">в</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 14">ы</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 15">е</span>
+            </span>
+            <span class="section-title__space"> 
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 16">б</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">р</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 12">е</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 13">н</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 14">д</span>
+              <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 15">ы</span>
+            </span>
+          </h2>
+        </div>
+        <div class="partners-page__body">
+          <div class="partners-page__swiper swiper">
+            <div class="partners-page__cols swiper-wrapper">
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>            
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>  
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>   
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>  
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>  
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>  
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>  
+              </div>
+              <div class="partners-page__col swiper-slide">
+                <div class="partners-page__partner  animate" data-animation="translateX">
+                  <div class="partners-page__image">
+                    <img src="img/partnerlogo.svg" alt="image">                
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="partners-page__nav swiper-nav">
+              <div class="swiper-nav__item swiper-nav__item--prev"></div>
+              <div class="swiper-nav__item swiper-nav__item--next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page__study study-page section">
+      <div class="study-page__container container">
+        <div class="study-page__inner">
+          <div class="study-page__header">
+            <div class="study-page__logo section-logo  animate vector" data-animation="dash">
+              <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="section-circle" stroke="url(#paint0_linear_10091_100)" stroke-width="30" fill-rule="evenodd" clip-rule="evenodd" mask="url(#msk)" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z" />
+                <defs>
+                  <linearGradient id="paint0_linear_10091_100" x1="39.8907" y1="-10.2543" x2="86.1505" y2="54.5852" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#DF5950"/>
+                  <stop offset="1" stop-color="#451046"/>
+                  </linearGradient>
+                  <mask id="msk">
+                  <rect width="100%" height="100%" fill="black"/>
+                  <path  fill="white"  stroke="white" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z"/>
+                  </mask> 
+                </defs>
+              </svg>  
+            </div>
+            <h2 class="study-page__title section-title">
+              <span class="section-title__space">
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 0">П</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 1">р</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 2">о</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 3">г</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 4">р</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 5">а</span>
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 6">м</span> 
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 7">м</span>      
+                <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 8">а</span>
+              </span>
+              <span class="section-title__space"> 
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 9">о</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 10">б</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">у</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 12">ч</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 13">е</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 14">н</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 15">и</span>
+                <span  class="section-title__char animate" data-animation="textanimate" style="--char-i: 16">я</span>
+              </span>
+            </h2>
+            <div class="study-page__subtitle animate" data-animation="translateY">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</div>
+          </div>
+          <div class="study-page__body">
+            <div class="study-page__cols">
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №1</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №2</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №3</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №4</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №5</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №6</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+              <div class="study-page__col col-study">
+                <div class="col-study__content animate" data-animation="translateY">
+                  <div class="col-study__label">Неделя №7</div>
+                  <div class="col-study__text">
+                    Красивая часть курса, которая помогает в успехе
+                  </div>                
+                </div>
+              </div>
+            </div>  
+          </div>        
+        </div>
+      </div>
+    </section>
+    <section class="page__team team-page section">
+      <div class="team-page__container container">
+        <div class="team-page__header">
+          <div class="team-page__logo section-logo animate vector" data-animation="dash">
+            <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="section-circle" stroke="url(#paint0_linear_10091_100)" stroke-width="30" fill-rule="evenodd" clip-rule="evenodd" mask="url(#msk)" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z" />
+              <defs>
+                <linearGradient id="paint0_linear_10091_100" x1="39.8907" y1="-10.2543" x2="86.1505" y2="54.5852" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DF5950"/>
+                <stop offset="1" stop-color="#451046"/>
+                </linearGradient>
+                <mask id="msk">
+                <rect width="100%" height="100%" fill="black"/>
+                <path  fill="white"  stroke="white" d="M53.9901 24.0097C41.9254 11.945 22.3647 11.945 10.3 24.0097L0.217664 13.9273C17.8507 -3.70565 46.4394 -3.70564 64.0724 13.9273C81.7054 31.5603 81.7054 60.149 64.0724 77.782L53.9901 67.6997C66.0547 55.635 66.0547 36.0743 53.9901 24.0097Z"/>
+                </mask> 
+              </defs>
+            </svg> 
+          </div>
+          <h2 class="team-page__title section-title">
+            <span class="section-title__space">
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 0">В</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 1">а</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 2">ш</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 3">и</span>
+            </span>
+            <span class="section-title__space">
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 4">п</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 5">р</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 6">е</span> 
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 7">п</span>      
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 8">о</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 9">д</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 10">а</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 11">в</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 12">а</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 13">т</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 14">е</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 15">л</span>
+              <span class="section-title__char animate" data-animation="textanimate" style="--char-i: 16">и</span>
+            </span>
+          </h2>
+        </div>
+        <div class="team-page__swiper swiper">
+          <div class="team-page__cols swiper-wrapper">
+            <div class="team-page__col col-team swiper-slide">
+              <div class="col-team__preview">
+                <img class="animate" data-animation="scale" src="img/team1.png" alt="">
+              </div>
+              <div class="col-team__body animate" data-animation="translateY">
+                <div class="col-team__name">Дмитрий Иванов</div>
+                <div class="col-team__prof">Специалист по видеокартам</div>
+                <a href="" class="col-team__btn">Биография</a>
+              </div>
+            </div>
+            <div class="team-page__col col-team swiper-slide">
+              <div class="col-team__preview">
+                <img class="animate" data-animation="scale" src="img/team2.png" alt="image">
+              </div>
+              <div class="col-team__body  animate" data-animation="translateY">
+                <div class="col-team__name">Дмитрий Иванов</div>
+                <div class="col-team__prof">Специалист по видеокартам</div>
+                <a href="" class="col-team__btn">Биография</a>
+              </div>
+            </div>
+            <div class="team-page__col col-team swiper-slide">
+              <div class="col-team__preview">
+                <img class="animate" data-animation="scale" src="img/team3.png" alt="image">
+              </div>
+              <div class="col-team__body  animate" data-animation="translateY">
+                <div class="col-team__name">Дмитрий Иванов</div>
+                <div class="col-team__prof">Специалист по видеокартам</div>
+                <a href="" class="col-team__btn">Биография</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-page__nav swiper-nav">
+            <div class="swiper-nav__item swiper-nav__item--prev"></div>
+            <div class="swiper-nav__item swiper-nav__item--next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include("_footer.html")
+  @@include("_js.html")
+</body>
+</html>

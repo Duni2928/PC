@@ -1,0 +1,99 @@
+$bp1: 1180.98px;
+$bp2: 991.98px;
+$bp3: 767.98px;
+$bp4: 479.98px;
+.rub:after {
+  content: "₽";
+}
+.no-scroll {
+  overflow: hidden;
+}
+.ibg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}  
+.slidetoggle {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.arrow-prev {
+  @media (min-width: $bp2) {
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+}
+.arrow-next {
+  transform: rotate(180deg);
+  @media (min-width: $bp2) {
+    &:hover {
+      transform: rotate(0);
+    }
+  }
+}
+.select {
+  width: 100%;
+  position: relative;
+}
+.select-native, .select-custom{
+  font-family: "Roboto";
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+.select-native{
+  display: block;
+  border: 0;
+  outline: none;
+  appearance: none;
+  background-image: url("../img/icons/arrowdrop.png"), linear-gradient(to bottom, #000 0%,#000 100%);
+  background-position: right 5px center;
+  background-repeat:  no-repeat;
+  &:-ms-expand { 
+    display: none; 
+  }
+}
+.select-custom {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &__selected {
+    cursor: pointer;
+    background: url("../img/icons/arrowdrop.png") right 5px center no-repeat, #000;
+  }
+  &__options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2; 
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+@media (hover: hover) {
+  .select-custom {
+    display: block;
+  }
+  .select-native:focus + .select-custom {
+    display: none;
+  }
+}
