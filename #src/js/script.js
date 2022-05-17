@@ -18,6 +18,13 @@ window.onload = function() {
     document.body.classList.add("loaded")
   }, 300);
 }
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+console.log(vh);
 if (document.querySelector(".timer-page")) {
   const dayel = document.querySelector(".day");
   const hourel = document.querySelector(".hour");
