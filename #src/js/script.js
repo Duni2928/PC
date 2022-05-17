@@ -18,13 +18,6 @@ window.onload = function() {
     document.body.classList.add("loaded")
   }, 300);
 }
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-console.log(vh);
 if (document.querySelector(".timer-page")) {
   const dayel = document.querySelector(".day");
   const hourel = document.querySelector(".hour");
@@ -59,7 +52,6 @@ if (document.querySelector(".timer-page")) {
     }  
   }
 }
-
 const iconMenu = document.querySelector(".icon-menu");
 const navMenu = document.querySelector(".nav-menu");
 const navMenuList = document.querySelector(".nav-menu__list");
@@ -74,14 +66,6 @@ iconMenu.addEventListener("click", ()=> {
     iconMenu.classList.remove("active");
   }
   document.body.classList.toggle("no-scroll")
-})
-const header = document.querySelector(".header");
-window.addEventListener("scroll",()=> {
-  if (window.scrollY > 168) {
-    header.classList.add("fixed");
-  } else {
-    header.classList.remove("fixed")
-  }
 })
  const width = window.innerWidth;
  if (width < 768){
@@ -112,34 +96,81 @@ window.addEventListener("scroll",()=> {
     });   
   }
  }
-
-window.addEventListener("scroll", ()=> {
-  let windowTop = window.pageYOffset;
-  let animate = document.querySelectorAll(".animate");
-  animate.forEach(item=> {
-    if (!item.classList.contains("animated")) {
-      item.style.visibility = "hidden"
-    }
-    function offset(item) {
-      let rect = item.getBoundingClientRect();
-      let scrollLeft = window.pageXOffsetLeft || document.documentElement.scrollLeft;
-      let scrollTop =  window.pageYOffsetLeft || document.documentElement.scrollTop;
-      return {top: rect.top + scrollTop, left: rect.left + scrollLeft}      
-    }
-    let itemTop = offset(item).top;
-    let itemPoint = window.innerHeight - item.offsetHeight * 0.5;
-    if (item.offsetHeight === undefined) {
-      let itemParent = item.parentNode;
-      itemPoint = window.innerHeight - itemParent.offsetHeight/4;
-    }
-    if (windowTop > itemTop - itemPoint) {
-      let animation = item.getAttribute("data-animation");
-      item.style.visibility = "visible"
-      item.classList.add(animation);
-      item.classList.add("animated");
-    }
-  }) 
+const header = document.querySelector(".header");
+window.addEventListener("scroll", ()=> { 
+  if (window.pageYOffset > 168) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed")
+  }
+  if(document.querySelector(".animate")) {
+    let windowTop = window.pageYOffset;
+    const animate = document.querySelectorAll(".animate");
+    animate.forEach(item=> {
+      if (!item.classList.contains("animated")) {
+        item.style.visibility = "hidden"
+      }
+      function offset(item) {
+        let rect = item.getBoundingClientRect();
+        let scrollLeft = window.pageXOffsetLeft || document.documentElement.scrollLeft;
+        let scrollTop =  window.pageYOffsetLeft || document.documentElement.scrollTop;
+        return {top: rect.top + scrollTop, left: rect.left + scrollLeft}      
+      }
+      let itemTop = offset(item).top;
+      let itemPoint = window.innerHeight - item.offsetHeight * 0.5;
+      if (item.offsetHeight === undefined) {
+        let itemParent = item.parentNode;
+        itemPoint = window.innerHeight - itemParent.offsetHeight/4;
+      }
+      if (windowTop > itemTop - itemPoint) {
+        let animation = item.getAttribute("data-animation");
+        item.style.visibility = "visible"
+        item.classList.add(animation);
+        item.classList.add("animated");
+      }
+    }) 
+  }
 })
-
-
-//falaaa
+const form = document.querySelector(".form");
+form.addEventListener("submit", formSend);
+function formSend(event) {
+  event.preventDefault();
+  let error = formValidate(form);
+  if (error === 0) {
+    event.target.submit();
+  } else {
+    alert("Некорректный e-mail адрес");
+  }
+}
+let formReg = document.querySelectorAll(".reg");
+function formValidate(form) {
+  let error = 0;
+  let formReg = document.querySelectorAll(".reg");
+  formReg.forEach(function(item) {
+    formRemoveError(item);
+    if (item.classList.contains("email")) {
+      if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(item.value)) {
+        formAddError(item);
+        error++;
+      } 
+    } 
+  })
+  return error
+}
+formReg.forEach(function(item) {
+  item.addEventListener("input",function() {
+    formValidate(form);
+  })
+})
+function formAddError(item) {
+  item.classList.add("error")
+}
+function formRemoveError(item) {
+  item.classList.remove("error")
+}
+/*let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});*/

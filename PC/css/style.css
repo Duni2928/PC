@@ -728,7 +728,6 @@ body {
   color: #fff;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  position: relative;
 }
 
 .preloader {
@@ -1522,6 +1521,11 @@ body {
   margin-left: -40px;
   background: -o-linear-gradient(355.22deg, #DF5950 11.19%, #451046 93.72%);
   background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.error {
+  -webkit-box-shadow: 0 0 5px red;
+          box-shadow: 0 0 5px red;
 }
 
 .social-footer {
