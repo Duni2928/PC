@@ -253,6 +253,11 @@ h3 {
           user-select: none;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 @-webkit-keyframes move {
   100% {
     -webkit-transform: rotate(360deg);
@@ -507,8 +512,8 @@ h3 {
 }
 
 .blockWidth:after {
-  -webkit-animation: blockWidth 0.6s ease both;
-          animation: blockWidth 0.6s ease both;
+  -webkit-animation: blockWidth 1s 1s ease both;
+          animation: blockWidth 1s 1s ease both;
 }
 
 .progress:before {
@@ -522,8 +527,8 @@ h3 {
 }
 
 .leftmove {
-  -webkit-animation: translateX 0.8s linear both;
-          animation: translateX 0.8s linear both;
+  -webkit-animation: translateX 1s linear both;
+          animation: translateX 1s linear both;
 }
 
 .btn {

@@ -16,7 +16,7 @@ testWebP(function (support) {
 window.onload = function() {
   setTimeout(() => {
     document.body.classList.add("loaded")
-  }, 300);
+  }, 200);
 }
 if (document.querySelector(".timer-page")) {
   const dayel = document.querySelector(".day");

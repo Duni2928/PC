@@ -6,6 +6,9 @@ $blue: #0AC1EE;
 h1, h2, h3 {
   user-select: none
 }
+html,body {
+  scroll-behavior: smooth
+}
 @keyframes move {
   100% {
   transform: rotate(360deg)
@@ -112,7 +115,7 @@ h1, h2, h3 {
 }
 .blockWidth {
   &:after {
-    animation: blockWidth .6s ease both;
+    animation: blockWidth 1s 1s ease both;
   }  
 }
 .progress {
@@ -126,7 +129,7 @@ h1, h2, h3 {
   } 
 }
 .leftmove {
-  animation: translateX .8s linear both;
+  animation: translateX 1s linear both;
 }
 .btn {
   padding: 10px 30px;
