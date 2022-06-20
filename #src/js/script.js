@@ -16,6 +16,7 @@ testWebP(function (support) {
 window.onload = function() {
   setTimeout(() => {
     document.body.classList.add("loaded")
+    console.log("loaded")
   }, 200);
 }
 if (document.querySelector(".timer-page")) {
