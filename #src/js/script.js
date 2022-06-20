@@ -23,7 +23,7 @@ if (document.querySelector(".timer-page")) {
   const hourel = document.querySelector(".hour");
   const minel = document.querySelector(".min");
   const secel = document.querySelector(".sec");
-  let actiondate = new Date(2022, 05, 02, 10, 30, 0);
+  let actiondate = new Date(2022, 09, 02, 10, 30, 0);
   let timer = setInterval(count, 1000);
   function count () {
     let now = new Date();
